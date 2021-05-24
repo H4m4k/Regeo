@@ -10,6 +10,7 @@ body, html {
     font-family: 'Montserrat', sans-serif;
     text-shadow: 1px 2px 3px rgb(182, 181, 181);
     min-height: 100vh;
+    height: 100%;
 }
 
 
@@ -440,7 +441,7 @@ iframe {
     .bg  {
         background-image: url(../img/bg1a.jpg);
         background-color: #dddddc;
-        height: 160%;
+        height: 150%;
     }
 
 
