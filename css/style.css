@@ -440,6 +440,7 @@ iframe {
     .bg  {
         background-image: url(../img/bg1a.jpg);
         background-color: #dddddc;
+        height: 160%;
     }
 
 
