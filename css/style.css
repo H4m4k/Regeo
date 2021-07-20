@@ -5,7 +5,7 @@
     margin:0;
 }
 
-body, html {
+body{
     margin: 0;    
     font-family: 'Montserrat', sans-serif;
     text-shadow: 1px 2px 3px grey;
@@ -20,17 +20,15 @@ body, html {
 /* GRID CONTAINER */
 
 .container {
-    height: 100vh;
     display: grid ;
     grid-template-columns: minmax(100px, 200px) minmax(min-content, 80ch) 1fr;
     grid-template-rows: minmax(60px,100px) 1fr 540px 1fr min-content;
+    height: 100vh;
 }
 
 .bg {
-    position: absolute;
-    z-index: -5;
-    width: 100%;
-    height: 100%;
+    grid-area: 1/1 / -1/-1;
+    z-index: -1;
     background-image: url(../img/bg.jpg);
     background-size:cover;
 }
@@ -327,6 +325,7 @@ nav > ul > li:hover {
     .container {
         grid-template-columns: minmax(80px, 150px) minmax(min-content, 4fr) 1fr;
         grid-template-rows: 4em 1fr minmax(min-content, max-content) 1fr min-content;
+
     }
 
 
@@ -362,9 +361,6 @@ nav > ul > li:hover {
 
 
 
-
-
-
     /* NAVIGATION */
 
     .query_Nav {
@@ -386,28 +382,7 @@ nav > ul > li:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  @media screen and ( max-width: 540px ) {
-
-
-
 
 
 
@@ -415,18 +390,15 @@ nav > ul > li:hover {
        /* GRID CONTAINER */
     .container {
         grid-template-columns: 100vw;
-        grid-template-rows: min-content min-content minmax(min-content, max-content) 1fr min-content;
+        grid-template-rows: repeat(3,min-content) minmax(min-content, max-content) min-content min-content;
     }
 
     .bg  {
+        position: static;
         background-image: url(../img/bg1a.jpg);
         background-color: #dddddc;
+        grid-area: 4/1 / 7/2;
     }
-
-
-
-
-
 
 
 
@@ -438,11 +410,6 @@ nav > ul > li:hover {
         grid-row: 1 / 2;
         height: 80px;
     }
-
-
-
-
-
 
 
 
@@ -460,10 +427,6 @@ nav > ul > li:hover {
     .grid_Nav > ul {
         font-size: 1.2em;
     }
-
-
-
-
 
 
 
@@ -518,8 +481,25 @@ nav > ul > li:hover {
         font-size: 16px;
     }
 
+
+    .contact h2 {
+        justify-self: start;
+        margin: 1em 2em;
+    }
+    
+    #contact {
+        justify-items: end;
+    }
+  
+ 
+    #contact > h2:nth-child(1) {
+        padding: 0;
+        justify-self: start;
+    }
+  
+
     #frame {
-        margin:20px 60px 40px 60px; 
+        margin: 2em auto;
         height: 30em;
      }
 
