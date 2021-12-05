@@ -1,34 +1,63 @@
 const bkHome = document.querySelector('#bkHome');
 const onas = document.querySelector('#onas');
 const kontakt = document.querySelector('#kontakt');
+const galeria = document.querySelector('#galeria');
 
-bkHome.onclick = homeOn;
-onas.onclick = aboutOn;
-kontakt.onclick = contactOn;
+bkHome.addEventListener("click", homeOn);
+onas.addEventListener("click", aboutOn);
+kontakt.addEventListener("click", contactOn);
+galeria.addEventListener("click", galleryOn);
+
+const menu = {
+  about: document.querySelector('#about'),
+  home: document.querySelector('#home'),
+  contact: document.querySelector('#contact'),
+  gallery: document.querySelector('#gallery')
+}
+
+const title = document.getElementsByTagName("TITLE")[0];
 
 function aboutOn() {
 
-  document.getElementById("about").classList.remove("off");
-  document.getElementById("home").classList.add("off");
-  document.getElementById("contact").classList.add("off");
+  menu.about.classList.remove("off");
+  menu.home.classList.add("off");
+  menu.contact.classList.add("off");
+  menu.gallery.classList.add("off");
   
-  document.getElementsByTagName("TITLE")[0].innerHTML = " O NAS | REGEO Adrian Kasprzak";
+  title.textContent = " O NAS | REGEO Adrian Kasprzak";
 }
 
 function contactOn() {
 
-  document.getElementById("contact").classList.remove("off");
-  document.getElementById("home").classList.add("off");
-  document.getElementById("about").classList.add("off");
+  menu.contact.classList.remove("off");
+  menu.home.classList.add("off");
+  menu.about.classList.add("off");
+  menu.gallery.classList.add("off");
   
-  document.getElementsByTagName("TITLE")[0].innerHTML = " KONTAKT | REGEO Adrian Kasprzak";
+  title.textContent = " KONTAKT | REGEO Adrian Kasprzak";
 }
 
 function homeOn() {
 
-  document.getElementById("home").classList.remove("off");
-  document.getElementById("about").classList.add("off");
-  document.getElementById("contact").classList.add("off");
+  menu.home.classList.remove("off");
+  menu.about.classList.add("off");
+  menu.contact.classList.add("off");
+  menu.gallery.classList.add("off");
   
-  document.getElementsByTagName("TITLE")[0].innerHTML = " HOME | REGEO Adrian Kasprzak";
+  title.textContent = " HOME | REGEO Adrian Kasprzak";
+}
+
+function galleryOn() {
+
+  menu.gallery.classList.remove("off")
+  menu.about.classList.add("off");
+  menu.contact.classList.add("off");
+  menu.home.classList.add("off");
+
+  title.textContent = " GALERIA | REGEO Adrian Kasprzak";
+
+}
+
+function enlarge() {
+  
 }

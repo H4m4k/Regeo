@@ -2,17 +2,20 @@
 <html lang="pl">
 
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="REGEO" content="Usługi Geodezyjne Adrian Kasprzak">
     <meta name="keywords"
-        content="geodeta, geodezja, kartografia, pomiary, topografia, kielce, busko, chęciny, jędrzejów">
+        content="geodeta, geodezja, kartografia, pomiary, topografia, kielce, kieleckie, busko, chęciny, jędrzejów, mapa, projektowa, kartograficzna, świętokrzyskie, wełecz, siesławice, mierzenie, konsultacje, powiat">
+    <meta name="description" content="Specjalizujemy sie w pomiarach kanalizacyjnych i drogowych">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Paweł Janik">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <title> HOME | REGEO Adrian Kasprzak </title>
 
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet" />
     <link href="css/fontello.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Orbitron&display=swap"
         rel="stylesheet">
@@ -23,7 +26,7 @@
 
     <div class="container">
 
-        
+
 
         <div class="wrapRidge">
             <div class="ridge dark query_Dark"></div>
@@ -33,20 +36,28 @@
 
         <header class="grid grid_Header center">
 
-            <img src="img/small_regeo.jpg" alt="REGEO logo z czerwonym E" id="bkHome">
+            <img src="./img/small_regeo.jpg" alt="REGEO logo z czerwonym E" id="bkHome">
 
         </header> <!-- LOGO-->
 
+        <!--****************** NAV MENU **************** -->
+
         <nav class="grid grid_Nav left transparent query_Nav">
             <ul>
-                <li id="onas">O nas</li> 
-                <li id="kontakt">Kontakt</li> 
+                <li id="onas">O nas</li>
+                <li id="kontakt">Kontakt</li>
+                <li id="galeria">Galeria</li>
             </ul>
 
-        </nav> <!-- Navigation Menu-->
+        </nav>
+
+        <!--****************** MAIN **************** -->
 
 
         <main class="grid grid_Main">
+
+
+            <!--\\\\\ HOME  ///// -->
 
             <div id="home" class="content">
 
@@ -77,6 +88,8 @@
 
             </div>
 
+            <!--\\\\\ ABOUT  ///// -->
+
             <div id="about" class="about off">
 
                 <p>Firma R<span class="red">E</span>GEO powstała w 2010 roku.
@@ -99,6 +112,8 @@
 
             </div>
 
+            <!--\\\\\ CONTACT  ///// -->
+
             <div id="contact" class="contact off">
 
                 <H2> R<span class="red">E</span>GEO</H2>
@@ -110,16 +125,52 @@
                 <p>tel. (+48) 504 505 176</p>
 
 
-               <div> <a class="icon-mail" href="mailto:regeo@onet.pl">regeo@onet.pl</a></div>
+                <div> <a class="icon-mail" href="mailto:regeo@onet.pl">regeo@onet.pl</a></div>
 
 
-               
-                    <div id="frame">
-                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.1477999839526!2d20.62825851589192!3d50.865463465254635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4718278c534b100f%3A0xac7e3a1cafe38921!2sREGEO%20Us%C5%82ugi%20Geodezyjne%20i%20Kartograficzne%20Adrian%20Kasprzak!5e0!3m2!1sen!2spl!4v1626793081152!5m2!1sen!2spl" 
-                         allowfullscreen=""
-                        loading="lazy"></iframe>
-                    </div>
-               
+
+                <div id="frame">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.1477999839526!2d20.62825851589192!3d50.865463465254635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4718278c534b100f%3A0xac7e3a1cafe38921!2sREGEO%20Us%C5%82ugi%20Geodezyjne%20i%20Kartograficzne%20Adrian%20Kasprzak!5e0!3m2!1sen!2spl!4v1626793081152!5m2!1sen!2spl"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+            </div>
+
+            <!--\\\\\ GALLERY  ///// -->
+
+            <div id="gallery" class="gallery add-Grid off">
+
+                <H2 class="gallery__title"> R<span class="red">E</span>GEO</H2>
+                <div class="gallery__container">
+                    <a class="img-width" href="/img/bg1.JPG" data-lightbox="1" data-title="Budowa kanałów">
+                        <img class="img" src="/img/bg1-small.JPG" alt="">
+                    </a>
+                    <a class="img-width" href="/img/bg2.JPG" data-lightbox="2">
+                        <img class="img" src="/img/bg2-small.JPG" alt="">
+                    </a>
+                    <a class="img-width" href="/img/bg13.JPG" data-lightbox="3">
+                        <img class="img" src="/img/bg13-small.JPG" alt="">
+                    </a>
+                    <a class="img-width" href="/img/bg11.JPG" data-lightbox="4">
+                        <img class="img" src="/img/bg11-small.JPG" alt="">
+                    </a>
+                    <a class="img-width" href="/img/bg12.JPG" data-lightbox="5">
+                        <img class="img" src="/img/bg12-small.JPG" alt="">
+                    </a>
+                    <a class="img-width" href="/img/bg10.JPG" data-lightbox="7">
+                        <img class="img" src="/img/bg10-small.JPG" alt="">
+                    </a>
+                    <a class="img-width" href="/img/bg3.JPG" data-lightbox="6" data-title="Budowa hali">
+                        <img class="img" src="/img/bg3-small.JPG" alt="">
+                    </a>
+                    <a class="img-width" href="/img/bg8.JPG" data-lightbox="8">
+                        <img class="img" src="/img/bg8-small.JPG" alt="">
+                    </a>
+
+                </div>
+
+
             </div>
 
         </main>
@@ -149,9 +200,10 @@
         </div>
         <div class="bg"></div>
         <!--background in absolute-->
-        <script src="js/script.js"></script>
 
     </div>
+    <script src="js/script.js"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>
