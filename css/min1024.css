@@ -1,0 +1,5 @@
+@media screen and ( min-width: 1024px) {
+    .transparent {
+    background-image: linear-gradient(90deg, white 20% ,transparent 48%);
+    }
+}

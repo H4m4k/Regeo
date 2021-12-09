@@ -14,7 +14,9 @@
 
     <title> HOME | REGEO Adrian Kasprzak </title>
 
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min1024.css">
+    <link rel="stylesheet" href="css/max1024.css">
     <link href="css/lightbox.css" rel="stylesheet" />
     <link href="css/fontello.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Orbitron&display=swap"
@@ -24,7 +26,7 @@
 
 <body>
 
-    <div class="container">
+    <div class="container grid">
 
 
 
@@ -34,16 +36,16 @@
         </div>
 
 
-        <header class="grid grid_Header center">
+        <header class="header flex center">
 
-            <img src="./img/small_regeo.jpg" alt="REGEO logo z czerwonym E" id="bkHome">
+            <img class="height-100 pointer" src="./img/small_regeo.jpg" alt="REGEO logo z czerwonym E" id="bkHome">
 
         </header> <!-- LOGO-->
 
         <!--****************** NAV MENU **************** -->
 
-        <nav class="grid grid_Nav left transparent query_Nav">
-            <ul>
+        <nav class="nav height-100 pointer left flex transparent query_Nav">
+            <ul class="nav__Ulist flex">
                 <li id="onas">O nas</li>
                 <li id="kontakt">Kontakt</li>
                 <li id="galeria">Galeria</li>
@@ -54,23 +56,24 @@
         <!--****************** MAIN **************** -->
 
 
-        <main class="grid grid_Main">
+        <main class="height-100 main-content">
 
 
             <!--\\\\\ HOME  ///// -->
 
-            <div id="home" class="content">
+            <div id="home" class="home flex flex-column height-100">
 
-                <h1>Kompleksowe usługi g<span class="red">e</span>odezyjne
+                <h1 class="home__title">Kompleksowe usługi g<span class="red">e</span>odezyjne
                 </h1>
 
-                <p> Naszymi kontrahentami są
+                <p class="home__text weight-500 letter-spacing align-start padding-left-2em"> Naszymi kontrahentami są
                     przedsiębiorstwa, osoby prywatne oraz
                     Urzędy Administracji Państwowej i Samorządowej.</p>
 
-                <p>Zakres specjalizacji naszej firmy to:</p>
+                <p class="home__text weight-500 letter-spacing align-start padding-left-2em">Zakres specjalizacji naszej
+                    firmy to:</p>
 
-                <ul>
+                <ul class="flex flex-column home__list">
 
                     <li>podziały nieruchomości</li>
                     <li>wznowienia znaków granicznych</li>
@@ -90,59 +93,62 @@
 
             <!--\\\\\ ABOUT  ///// -->
 
-            <div id="about" class="about off">
+            <div id="about" class="about flex flex-column height-100 off">
 
-                <p>Firma R<span class="red">E</span>GEO powstała w 2010 roku.
+                <p class="about__text">Firma R<span class="red larger-font">E</span>GEO powstała w 2010 roku.
                     Jest zespołem rzetelnych i doświadczonych geodetów. Nasza wieloletnia praktyka poparta jest opiniami
                     wielu zadowolonych klientów, takich jak przedsiębiorstwa , instytucje samorządowe oraz osoby
                     prywatne.</p>
 
-                <p>Oferujemy pełen zakres obsługi oraz świadczenia usług doradczych zarówno , podczas planowania budowy
+                <p class="about__text">Oferujemy pełen zakres obsługi oraz świadczenia usług doradczych zarówno ,
+                    podczas planowania budowy
                     obiektów małogabarytowych, jak również dla wysokobudżetowych inwestycji administracyjnych.</p>
 
-                <p>Firma REGEO posiada na swoim koncie ukończone kontrakty projektów takich jak np.: sieci
+                <p class="about__text">Firma REGEO posiada na swoim koncie ukończone kontrakty projektów takich jak np.:
+                    sieci
                     kanalizacyjne, wodociągowe, stacje benzynowe, hale produkcyjne oraz wiele małogabartowych projektów.
                 </p>
 
 
-                <p> Do grona naszych klientów należą między innymi kontrahenci tacy jak
+                <p class="about__text"> Do grona naszych klientów należą między innymi kontrahenci tacy jak
                     PKN Orlen S.A. czy P4 Sp. z o.o.</p>
 
-                <p> Serdecznie zapraszamy do współpracy!</p>
+                <p class="about__text"> Serdecznie zapraszamy do współpracy!</p>
 
             </div>
 
             <!--\\\\\ CONTACT  ///// -->
 
-            <div id="contact" class="contact off">
+            <div id="contact" class="contact height-100 flex flex-column off">
 
-                <H2> R<span class="red">E</span>GEO</H2>
+                <h2 class="align-start contact__title"> R<span class="red larger-font">E</span>GEO</h2>
 
-                <p> Adrian Kasprzak<br />
+                <p class="align-start weight-500 contact__text"> Adrian Kasprzak<br />
                     Usługi Geodezyjne i Kartograficzne<br />
                     25-363 Kielce, ul. Wesoła 51 lok. 715</p>
 
-                <p>tel. (+48) 504 505 176</p>
+                <p class="align-start contact__text">tel. (+48) 504 505 176</p>
 
 
-                <div> <a class="icon-mail" href="mailto:regeo@onet.pl">regeo@onet.pl</a></div>
+                <div class="align-start contact__link"> <a class="icon-mail"
+                        href="mailto:regeo@onet.pl">regeo@onet.pl</a></div>
 
 
 
-                <div id="frame">
+                <div class="frame flex">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.1477999839526!2d20.62825851589192!3d50.865463465254635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4718278c534b100f%3A0xac7e3a1cafe38921!2sREGEO%20Us%C5%82ugi%20Geodezyjne%20i%20Kartograficzne%20Adrian%20Kasprzak!5e0!3m2!1sen!2spl!4v1626793081152!5m2!1sen!2spl"
-                        allowfullscreen="" loading="lazy"></iframe>
+                        allowfullscreen="" loading="lazy" class="frame__iframe"></iframe>
                 </div>
 
             </div>
 
             <!--\\\\\ GALLERY  ///// -->
 
-            <div id="gallery" class="gallery add-Grid off">
+            <div id="gallery" class="gallery height-100 grid off">
 
-                <H2 class="gallery__title"> R<span class="red">E</span>GEO</H2>
-                <div class="gallery__container">
+                <H2 class="gallery__title"> R<span class="red larger-font">E</span>GEO</H2>
+                <div class="gallery__container flex">
                     <a class="img-width" href="/img/bg1.JPG" data-lightbox="1"
                         data-title="Budowa kanalizacji deszczowej - osiedle Bzinek - m. Skarżysko-Kamienna 2020 r.">
                         <img class="img" src="/img/bg1-small.JPG" alt="">
@@ -183,26 +189,26 @@
 
         </main>
 
-        <div class="wrapRidgeBtm">
+        <div class="wrapRidgeBtm grid">
 
             <div class="ridgeBtm light query_Light"></div>
             <div class="ridgeBtm dark query_Dark"></div>
 
         </div>
 
-        <footer class="grid grid_Footer">
+        <footer class="footer">
 
-            <div class="center footer">
-                &#169; Copyright by R<span class="red center">E</span>GEO
+            <div class="center flex footer__container weight-500">
+                &#169; Copyright by R<span class="red larger-font center">E</span>GEO
             </div>
 
         </footer>
 
-        <div class="grid transparent grid_Footer_Ext">
+        <div class="transparent footer_Extension">
 
-            <a class="left" href="http://jigsaw.w3.org/css-validator/check/referer">
+            <a class="left flex height-100" href="http://jigsaw.w3.org/css-validator/check/referer">
                 <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                    alt="Poprawny CSS!" />
+                    alt="CSS Validated!" />
             </a>
 
         </div>
